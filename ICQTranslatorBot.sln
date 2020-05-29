@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICQTranslatorBot.Test", "ICQTranslatorBot.Test\ICQTranslatorBot.Test.csproj", "{D1FE245F-7D5F-4A94-9CCA-BD635F4A7407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICQTranslatorBot.Logic", "ICQTranslatorBot.Logic\ICQTranslatorBot.Logic.csproj", "{96E85D63-17FB-4A65-B108-AB3EF6D9F816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1FE245F-7D5F-4A94-9CCA-BD635F4A7407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FE245F-7D5F-4A94-9CCA-BD635F4A7407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FE245F-7D5F-4A94-9CCA-BD635F4A7407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FE245F-7D5F-4A94-9CCA-BD635F4A7407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E85D63-17FB-4A65-B108-AB3EF6D9F816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E85D63-17FB-4A65-B108-AB3EF6D9F816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E85D63-17FB-4A65-B108-AB3EF6D9F816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E85D63-17FB-4A65-B108-AB3EF6D9F816}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7EEEDBD-297F-413F-9872-C34354319324}
+	EndGlobalSection
+EndGlobal

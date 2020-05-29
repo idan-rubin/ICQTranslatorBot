@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ICQTranslatorBot.Logic/obj
+/ICQTranslatorBot.Test/bin/Debug/netcoreapp3.1
+/ICQTranslatorBot.Test/obj
+/.vs/ICQTranslatorBot/v16/.suo
+/.vs/slnx.sqlite
+/ICQTranslatorBot.Logic/bin/Debug/netcoreapp3.1
+/ICQTranslatorBot.Test/Properties/PublishProfiles
+/ICQTranslatorBot.Test/ICQTranslatorBot.Test.csproj.user
