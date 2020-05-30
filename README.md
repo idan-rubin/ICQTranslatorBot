@@ -1,5 +1,5 @@
 ## ICQTranslatorBot
-Simple English/Russian translator powered by Google and [icq.bot.net]
+Simple English/Russian translator powered by Google, >net Core 3.1 and and [icq.bot.net]
 
 This bot is available in ICQ:
 * https://icq.im/EnglishToRussianBot
