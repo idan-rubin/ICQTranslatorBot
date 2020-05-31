@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Google.Apis" Version="1.45.0" />
     <PackageReference Include="Google.Cloud.Translation.V2" Version="2.0.0" />
-    <PackageReference Include="ICQ.Bot" Version="1.4.3" />
+    <PackageReference Include="ICQ.Bot" Version="1.4.4" />
   </ItemGroup>
 
 </Project>

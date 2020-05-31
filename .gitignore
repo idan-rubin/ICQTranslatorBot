@@ -10,3 +10,5 @@
 /ICQTranslatorBot.Logic/bin/Debug/netcoreapp3.1
 /ICQTranslatorBot.Test/Properties/PublishProfiles
 /ICQTranslatorBot.Test/ICQTranslatorBot.Test.csproj.user
+/.vs/ICQTranslatorBot/DesignTimeBuild
+/.vs/VSWorkspaceState.json

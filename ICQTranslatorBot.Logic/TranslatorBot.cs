@@ -5,6 +5,7 @@ using ICQ.Bot.Args;
 using ICQ.Bot.Types;
 using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,8 +73,7 @@ namespace ICQTranslatorBot.Logic
 
         private void BotOnMessageReceived(object sender, MessageEventArgs messageEventArgs)
         {
-            var message = messageEventArgs.Message;
-            ProcessMessage(message).Wait();
+            ProcessMessage(messageEventArgs).Wait();
         }
 
         private void BotOnReceiveError(object sender, ReceiveErrorEventArgs receiveErrorEventArgs)
@@ -87,8 +87,9 @@ namespace ICQTranslatorBot.Logic
             Console.WriteLine("Received error: {0}", e.Exception.ToString());
         }
 
-        private async Task ProcessMessage(Message message)
+        private async Task ProcessMessage(MessageEventArgs messageArgs)
         {
+            Message message = messageArgs.Message;
             if (message.Chat == null || message.From == null || message.Chat.ChatId != message.From.UserId.ToString())
             {
                 return;
@@ -110,7 +111,13 @@ namespace ICQTranslatorBot.Logic
             }
             else
             {
-                translatedText = TranslateText(message.Text);
+                string text = message.Text;
+                if (string.IsNullOrWhiteSpace(message.Text))
+                {
+                    text = string.Join(Environment.NewLine, messageArgs.ForwardedMessages.Select(m => m.Text).ToList());
+                }
+
+                translatedText = TranslateText(text);
             }
 
             await bot.SendTextMessageAsync(message.From.UserId, translatedText);
