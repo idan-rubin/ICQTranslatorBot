@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Apis" Version="1.45.0" />
+    <PackageReference Include="Google.Apis" Version="1.57.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ICQTranslatorBot.Logic\ICQTranslatorBot.Logic.csproj" />
